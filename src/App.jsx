@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Courses from './components/Courses';
 import Cart from './components/Cart';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 const App = () => {
   const [courses, setCourses] = useState([]);
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/cart" element={<Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart} />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );
