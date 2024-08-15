@@ -11,8 +11,8 @@ const Courses = ({ handleAddToCart, courses }) => {
 
   return (
     <section>
-      <h2>Available Courses</h2>
-      <div className="course-container">
+      <h2 className='text-2xl font-bold mb-4'>Available Courses</h2>
+      <div className="flex overflow-x-auto space-x-4 pb-4">{/* horizontally display the cards */}
         {courses.length === 0 ? (
           <p>Loading courses...</p>
         ) : (
