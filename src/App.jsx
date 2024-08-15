@@ -12,7 +12,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from JSON Server
-    fetch('http://localhost:8000/courses')
+    fetch('https://json-booking.vercel.app/courses')
       .then(response => response.json())
       .then(data => setCourses(data))
       .catch(error => console.error('Error fetching courses:', error));
@@ -20,14 +20,14 @@ const App = () => {
 
   useEffect(() => {
     // Fetch cart data from JSON Server
-    fetch('http://localhost:8000/cart')
+    fetch('https://json-booking.vercel.app/cart')
       .then(response => response.json())
       .then(data => setCart(data))
       .catch(error => console.error('Error fetching cart:', error));
   }, []);
 
   const handleAddToCart = (course) => {
-    fetch('http://localhost:8000/cart', {
+    fetch('https://json-booking.vercel.app/cart', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(course),
@@ -38,7 +38,7 @@ const App = () => {
   };
 
   const handleRemoveFromCart = (id) => {
-    fetch(`http://localhost:8000/cart/${id}`, {
+    fetch(`https://json-booking.vercel.app/${id}`, {
       method: 'DELETE',
     })
     .then(() => setCart(cart.filter(item => item.id !== id)))
