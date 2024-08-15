@@ -57,5 +57,22 @@
       "duration": "8 months"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "1",
+      "imageUrl": "https://media.istockphoto.com/id/1613771362/photo/composition-with-food-products-rich-in-zinc.webp?b=1&s=612x612&w=0&k=20&c=Q2UIXZcLZJLfZaU7HqEGWT6QJ-VYmssOEb0TaaQbmw8=",
+      "course": "spices farming",
+      "mode": "online",
+      "price": 50000,
+      "duration": "8 months"
+    },
+    {
+      "id": "1",
+      "imageUrl": "https://media.istockphoto.com/id/1613771362/photo/composition-with-food-products-rich-in-zinc.webp?b=1&s=612x612&w=0&k=20&c=Q2UIXZcLZJLfZaU7HqEGWT6QJ-VYmssOEb0TaaQbmw8=",
+      "course": "spices farming",
+      "mode": "online",
+      "price": 50000,
+      "duration": "8 months"
+    }
+  ]
 }
