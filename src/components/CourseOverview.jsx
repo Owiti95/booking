@@ -1,3 +1,5 @@
+import React from "react";
+
 const CourseOverview = ({ course }) => (
     <div className="course-overview">
         <h4>overview</h4>
@@ -10,3 +12,5 @@ const CourseOverview = ({ course }) => (
         {course.id === 7 && <p>Master the skills needed to efficiently manage a farm, including planning, resource allocation, and operational management.</p>}
     </div>
 );
+
+export default CourseOverview;

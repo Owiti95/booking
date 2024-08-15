@@ -1,3 +1,5 @@
+import React from "react";
+
 const CourseCard = ({ course, onAddToCart, onShowOverview }) => (
     <div key={course.id} className="course-card">
         <img src={course.imageUrl} />
@@ -9,3 +11,5 @@ const CourseCard = ({ course, onAddToCart, onShowOverview }) => (
         <button onClick={() => onShowOverview(course)}>overview</button>
     </div>
 );
+
+export default CourseCard;

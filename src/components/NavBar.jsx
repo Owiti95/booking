@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const NavBar = ({cartCount}) => (
     <header className="header">
         <h1>Courses</h1>
@@ -8,3 +11,5 @@ const NavBar = ({cartCount}) => (
         </nav>
     </header>
 );
+
+export default NavBar;

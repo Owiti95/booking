@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from 'react-router-dom';
+
 const Home = () => (
     <section>
         <h2>Introduction</h2>
@@ -10,3 +13,5 @@ const Home = () => (
         </Link>
     </section>
 );
+
+export default Home;
