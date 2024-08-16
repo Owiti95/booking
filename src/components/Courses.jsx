@@ -1,3 +1,4 @@
+//renders the list of components & parent of the courseCard.jsx
 import React, { useState } from 'react';
 import CourseCard from './CourseCard';
 import CourseOverview from './CourseOverview';
@@ -25,8 +26,8 @@ const Courses = ({ handleAddToCart, courses }) => {
             />
           ))
         )}
-        {selectedCourse && <CourseOverview course={selectedCourse} />}
       </div>
+      {selectedCourse && <CourseOverview course={selectedCourse} />}
     </section>
   );
 };

@@ -2,7 +2,6 @@ import React from "react";
 
 const CourseOverview = ({ course }) => (
     <div className="course-overview">
-        <h4>overview</h4>
         {course.id === 1 && <p>Learn how to cultivate and harvest various spices, understand soil requirements, and explore market opportunities.</p>}
         {course.id === 2 && <p>Gain insights into poultry care, feeding practices, disease management, and commercial poultry farming.</p>}
         {course.id === 3 && <p>Understand the business side of agriculture, including market analysis, financial management, and supply chain logistics.</p>}

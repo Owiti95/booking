@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 const Home = () => (
+    <div>
+    <h5 className="text-2xl font-bold mb-4 items-center">About Us</h5>
+        <p className="text-sm">
+          We offer a variety of farming courses to help you enhance your skills and knowledge in modern agriculture.
+        </p>
     <section className="flex justify-center items-center h-screen bg-gray-100">
         <div className="text-center p-6 bg-white shadow-md rounded-lg max-w-2xl">
         <h2 className="text-2xl font-bold mb-4">Introduction</h2>
@@ -14,6 +19,7 @@ const Home = () => (
         </Link>
         </div>
     </section>
+    </div>
 );
 
 export default Home;

@@ -1,3 +1,4 @@
+//renders information of individual course in a card
 import React from "react";
 
 const CourseCard = ({ course, onAddToCart, onShowOverview }) => (
@@ -9,7 +10,7 @@ const CourseCard = ({ course, onAddToCart, onShowOverview }) => (
         />
         <h3 className='font-bold mb-2'>{course.course}</h3>
         <p className='mb-1'>Mode: {course.mode}</p>
-        <p className='mb-1'>Price: ${course.price}</p>
+        <p className='mb-1'>Price: Kshs{course.price}</p>
         <p className='mb-4'>Duration: {course.duration}</p>
         <div className="flex justify-between">
         <button

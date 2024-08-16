@@ -1,3 +1,4 @@
+//puts the information of individual selected item/course
 import React from "react";
 
 const CartItem = ({item, onRemoveFromCart}) => (
