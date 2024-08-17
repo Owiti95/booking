@@ -1,5 +1,5 @@
 //renders the list of components & parent of the courseCard.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CourseCard from './CourseCard';
 import CourseOverview from './CourseOverview';
 
