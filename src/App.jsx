@@ -14,7 +14,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from JSON Server
-    fetch('https://jsonforbooks.vercel.app/courses')
+    fetch('https://json-courses.vercel.app/courses')
       .then(response => response.json())// Convert response to JSON
       .then(data => setCourses(data))// Update state with fetched data
       .catch(error => console.error('Error fetching courses:', error));
@@ -22,7 +22,7 @@ const App = () => {
 
   useEffect(() => {
     // Fetch cart data from JSON Server
-    fetch('https://jsonforbooks.vercel.app/cart')
+    fetch('https://json-courses.vercel.app/cart')
       .then(response => response.json())// Convert response to JSON
       .then(data => setCart(data))// Update state with fetched data
       .catch(error => console.error('Error fetching cart:', error));
@@ -30,7 +30,7 @@ const App = () => {
 
   // Function to add a course to the cart
   const handleAddToCart = (course) => {
-    fetch('https://jsonforbooks.vercel.app/cart', {
+    fetch('https://json-courses.vercel.app/cart', {
       method: 'POST', // add new item 
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(course),// Convert course object to JSON string
@@ -42,7 +42,7 @@ const App = () => {
 
   // Function to remove an item from the cart by its ID
   const handleRemoveFromCart = (id) => {
-    fetch(`https://jsonforbooks.vercel.app/cart/${id}`, {//send a delete request to the server
+    fetch(`https://json-courses.vercel.app/cart/${id}`, {//send a delete request to the server
       method: 'DELETE',
     })
     .then(() => {
