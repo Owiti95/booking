@@ -57,5 +57,14 @@
       "duration": "8 months"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "4",
+      "imageUrl": "https://media.istockphoto.com/id/1140618561/photo/exploring-the-tea-plantation.webp?b=1&s=612x612&w=0&k=20&c=Sf2dAsxIZdqDf41qICM1HeIa2kGyn2r-JUnWbWsvoBc=",
+      "course": "farm tour",
+      "mode": "bus tour",
+      "price": 4000,
+      "duration": "15 days"
+    }
+  ]
 }
