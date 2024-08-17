@@ -21,10 +21,17 @@ The Farming Courses Application is a React-based web app that allows users to br
 
 ## Installation
 
+## Summary of Instructions on how run this repo in your machine
+
+- **Clone the repository**
+- **Install dependencies**
+- **Set up and run JSON Server**
+- **Start the React application**
+
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/your-username/farming-courses-app.git
+    git clone https://github.com/Owiti95/farming-courses-app.git
     cd farming-courses-app
     ```
 
@@ -45,8 +52,6 @@ The Farming Courses Application is a React-based web app that allows users to br
     ```bash
     npm install -g json-server
     ```
-
-    Create a `db.json` file in the root directory with the necessary data structure.
 
 4. **Start the React Application**
 
