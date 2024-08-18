@@ -94,4 +94,4 @@ Contributions are welcome! Please follow these steps:
 
 ## Live Link
 
-https://booking-two-sepia.vercel.app/
+https://booking-doca.vercel.app/
