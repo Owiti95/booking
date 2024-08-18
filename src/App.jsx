@@ -15,21 +15,21 @@ const App = () => {
 
   useEffect(() => {
     // Fetch data from local JSON server
-    axios.get('http://localhost:3000/courses')
+    axios.get('https://js-ashy-mu.vercel.app/courses')
       .then(response => setCourses(response.data))
       .catch(error => console.error('Error fetching courses:', error));
   }, []); // Empty dependency array means this effect runs once when the component mounts
 
   useEffect(() => {
     // Fetch cart data from local JSON server
-    axios.get('http://localhost:3000/cart')
+    axios.get('https://js-ashy-mu.vercel.app/cart')
       .then(response => setCart(response.data))
       .catch(error => console.error('Error fetching cart:', error));
   }, []);
 
   // Function to add a course to the cart
   const handleAddToCart = (course) => {
-    axios.post('http://localhost:3000/cart', course, {
+    axios.post('https://js-ashy-mu.vercel.app/cart', course, {
       headers: { 'Content-Type': 'application/json' }
     })
     .then(response => setCart([...cart, response.data]))
@@ -38,7 +38,7 @@ const App = () => {
 
   // Function to remove an item from the cart by its ID
   const handleRemoveFromCart = (id) => {
-    axios.delete(`http://localhost:3000/cart/${id}`)
+    axios.delete(`https://js-ashy-mu.vercel.app/cart/${id}`)
       .then(() => {
         setCart(cart.filter(item => item.id !== id));
       })
