@@ -1,7 +1,8 @@
 import React from "react";
-
+// Define the `CourseOverview` functional component that receives a `course` prop.
 const CourseOverview = ({ course }) => (
     <div className="course-overview">
+        {/* Conditional rendering based on the course ID. Each block displays specific information depending on the course. */}
         {course.id === 1 && <p>Learn how to cultivate and harvest various spices, understand soil requirements, and explore market opportunities.</p>}
         {course.id === 2 && <p>Gain insights into poultry care, feeding practices, disease management, and commercial poultry farming.</p>}
         {course.id === 3 && <p>Understand the business side of agriculture, including market analysis, financial management, and supply chain logistics.</p>}

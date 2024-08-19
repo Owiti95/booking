@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-
+// Define the `Home` functional component using an arrow function.
+// This component represents the homepage of the application.
 const Home = () => (
     <div>
     <h5 className="text-2xl font-bold mb-4 items-center">About Us</h5>
